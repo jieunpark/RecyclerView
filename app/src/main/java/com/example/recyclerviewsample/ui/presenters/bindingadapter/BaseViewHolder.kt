@@ -6,5 +6,5 @@ import androidx.recyclerview.widget.RecyclerView
 
 open class BaseViewHolder<T>(_binding: ViewDataBinding): RecyclerView.ViewHolder(_binding.root) {
     var context: Context? = null
-    open fun bind(position: Int, item: T) {}
+    open fun bind(position: Int, item: T, isSelected: Boolean ) {}
 }
